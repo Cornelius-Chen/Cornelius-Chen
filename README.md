@@ -13,7 +13,7 @@ I design systems by making the question, information boundary, decision rule, an
 **Question.** A successful task can leave useful traces, but task success alone does not prove that a reusable capability improved future work. How should evidence move toward a stable, reusable asset without granting the agent authority to approve its own output?
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Evidence + provenance] --> B[Quarantined candidate]
     B --> C[Task-scoped reuse]
     C --> D[Independent test]
@@ -30,7 +30,7 @@ The key separation is **recorded run → useful retrieval → demonstrated capab
 **Question.** A backtest can look convincing when later market information slips into an earlier decision, or when a good rule is selected on the same window used to judge it. I separate the information available to a blind researcher from the information used for later diagnosis.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Point-in-time data] --> B[Blind decision]
     B --> C[Frozen path]
     C --> D[Reveal + leakage audit]
