@@ -6,7 +6,7 @@ M.A. Statistics, Columbia University · expected 2027
 
 [LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
 
-I build local systems where the input, decision boundary, and later evidence can be inspected. These two public source releases show complete, runnable workflows and the limits of what their tests establish.
+I build local systems where the input, decision boundary, and later evidence can be inspected. These public source releases show runnable workflows and the limits of what their tests establish.
 
 ## Built projects
 
@@ -26,7 +26,13 @@ await hub.invoke("ai.text.generate", { prompt: "Hello" });
 
 The caller names a capability; API Hub owns the provider credential, grant check, route, usage record, and audit. Calls default to dry-run; a live provider request needs explicit local activation. The source release includes the UI, gateway, Node SDK/CLI/MCP bridge, tests, and Windows launcher build path. It is a local MVP, not a production secret vault. [Explore the source and local setup →](https://github.com/Cornelius-Chen/API-Hub)
 
-The project READMEs contain the [AttentionOS architecture figure](https://github.com/Cornelius-Chen/AttentionOS#architecture) and [API Hub architecture figure](https://github.com/Cornelius-Chen/API-Hub#architecture), alongside runnable entry points and deeper documentation.
+### [IRONMAN Harness](https://github.com/Cornelius-Chen/IRONMAN-Harness) · agent actions under human authority
+
+> **Offline mission:** Planner → Executor → Verifier → Completed, with an intact event chain. A separate write test pauses until one-time human approval.
+
+A local Python control plane owns mission state, explicit model routing, scoped tools, budgets, approval decisions, and audit history. The included one-command demo uses a scripted offline model; it proves the loop runs, not that a real model solves tasks well. [Run the demo and examine the architecture →](https://github.com/Cornelius-Chen/IRONMAN-Harness)
+
+Each project README contains its architecture figure, runnable entry point, tests, and deeper design notes.
 
 ## Research and design notes
 
