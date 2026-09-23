@@ -12,9 +12,17 @@ M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.
 
 Jervis is the center of this research portfolio. It asks how a model can turn examples, practice, and feedback into **scoped, reusable domain judgment**—and how a later task can test whether that judgment actually helps. I set the system goals, boundaries, and acceptance criteria; the models and tools are replaceable workers inside that design.
 
+**Start with a real case:** [a Designer judgment selected on one task and rejected on another](cases/jervis.md#the-system-in-one-example) · [a trader simulation that separated “sell A” from “buy B”](cases/quant.md#a-completed-diagnostic-loop) · [the ownership map](VISION.md#responsibilities-and-actual-boundaries)
+
 [![Layered portfolio architecture showing Jervis, its Designer domain, the Guanlan trading research application, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
 
 *Read the diagram as a map of responsibility. Solid links mark bounded local connections supported by implementation or execution records. Dashed links mark an intended handoff whose full effect is not yet demonstrated. Separate lanes are not a claim that all projects run as one platform.* [Open the full diagram](assets/portfolio-architecture.svg) · [Read the architecture thesis](VISION.md)
+
+| Architecture decision | Observed local behavior | Evidence limit |
+| --- | --- | --- |
+| **A candidate has to survive scope selection.** | Jervis reused one Designer judgment on a new brief and rejected a narrower judgment on another. | The model comparison was mixed; human quality gain remains unverified. |
+| **Market facts and trader experience have different owners.** | Guanlan supplied time-bounded evidence and simulation; Jervis retained candidate experience for a continuing trader identity. | Historical simulation did not establish profitable live trading. |
+| **Completion and acceptance have separate records.** | SpecMirror displays scoped runs and their evidence at the engineering node. | A full human-feedback-to-learning cycle has not been demonstrated. |
 
 ### 01 · [Jervis: learning and capability composition](cases/jervis.md)
 
