@@ -18,6 +18,10 @@ My projects ask one larger question: **How can an AI system become useful over t
 
 The future workspace I am working toward has five responsibilities. Each has a concrete project or research track behind it:
 
+[![A relationship map with Rongrong Chen at the center, six core projects connected by ownership lines, and three dashed future project connections](assets/portfolio-map.png)](assets/portfolio-map.png)
+
+*Solid spokes show my relationship to each project. Dashed links show proposed future connections between projects; they are not implemented integrations. [Open the full-size map](assets/portfolio-map.png).*
+
 | Responsibility | Work behind it | Current boundary |
 | --- | --- | --- |
 | **Notice and decide** — preserve the evidence behind a decision, then compare it with later outcomes | [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) | Runnable local release; its replay does not establish predictive accuracy |

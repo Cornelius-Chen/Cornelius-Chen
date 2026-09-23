@@ -10,6 +10,10 @@ My projects explore those questions at different points in the same lifecycle. T
 
 ## One lifecycle, separate owners
 
+[![Rongrong Chen and six core projects in a relationship map](assets/portfolio-map.png)](assets/portfolio-map.png)
+
+The map shows six core workstreams around me. Solid spokes mean project ownership; dashed links mean possible future integration. Quant research and product experiments are domain laboratories discussed in the table below, rather than components of an existing shared runtime.
+
 | Layer | Purpose | Current work | What I can point to today |
 | --- | --- | --- | --- |
 | Evidence and decision | Retain input provenance and freeze a decision before later outcomes are known | AttentionOS; cutoff-safe quant research | Runnable AttentionOS release; [quant method and negative result](cases/quant.md) |
