@@ -59,4 +59,11 @@ A separate, runnable local mission controller owns scoped tools, budgets, human 
 | [API Hub](https://github.com/Cornelius-Chen/API-Hub) | Capability grants, provider credential custody, dry-run calls, usage, and audit in a local MVP. |
 | [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) | A decision record that freezes original evidence and compares it with later outcomes. |
 
+<details>
+<summary>Research studio illustration</summary>
+
+![Illustrated research studio with a central researcher and surrounding design, market, media, and system workstations](assets/portfolio-studio.png)
+
+</details>
+
 The public repositories contain selected source and explanations. Ongoing local research, credentials, market datasets, private feedback, and full runtime records are not included in these releases.
