@@ -1,64 +1,46 @@
-# Rongrong Chen
+# Rongrong Chen · Cornelius
 
-**Applied AI · agent systems · evidence-led product design**
+**I design AI systems that can learn from work, use tools within human authority, and show the evidence behind a result.**
 
-M.A. Statistics, Columbia University · expected 2027
+M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
 
-[LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
+![An editorial illustration of a person examining evidence beside separate work surfaces](assets/portfolio-horizon.png)
 
-![An editorial illustration of a person examining evidence beside three separate work surfaces](assets/portfolio-horizon.png)
+## The architecture I am building
 
-> I build AI systems that make **what was observed, what was authorized, and what actually happened** inspectable.
+Jervis is the center of this research portfolio. It asks how a model can turn examples, practice, and feedback into **scoped, reusable domain judgment**—and how a later task can test whether that judgment actually helps. I set the system goals, boundaries, and acceptance criteria; the models and tools are replaceable workers inside that design.
 
-My projects ask one larger question: **How can an AI system become useful over time without hiding its evidence or taking authority it was never given?** The three public releases below are independently runnable parts of that inquiry. They are not yet one integrated product.
+[![Layered portfolio architecture showing Jervis, its Designer domain, the Guanlan trading research application, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
 
-[Explore the systems](#three-runnable-systems) · [Read the architecture thesis](VISION.md) · [See research notes](#research-notes)
+*Read the diagram as a map of responsibility. Solid links mark bounded local connections supported by implementation or execution records. Dashed links mark an intended handoff whose full effect is not yet demonstrated. Separate lanes are not a claim that all projects run as one platform.* [Open the full diagram](assets/portfolio-architecture.svg) · [Read the architecture thesis](VISION.md)
 
-## The direction
+### 01 · [Jervis: learning and capability composition](cases/jervis.md)
 
-The future workspace I am working toward has five responsibilities. Each has a concrete project or research track behind it:
+The core loop is **source → practice → conditional judgment → scoped use → evaluation**. Durable project state and source references outlive a particular model worker. Jervis selects domain capability by scope, composes work through shared entities and contracts, and preserves the distinction between a completed run, a useful retrieval, and proven capability gain.
 
-[![A relationship map with Rongrong Chen at the center, six core projects connected by ownership lines, and three dashed future project connections](assets/portfolio-map.png)](assets/portfolio-map.png)
+**Designer sits inside this architecture as the first domain apprenticeship.** It originated as an independent design learning system; a bounded integration now lets Jervis use selected Designer methods and evidence for real design work. This is an integration of domain capability, not a claim that the original Designer repository was absorbed or that design quality improved in a human evaluation.
 
-*Solid spokes show my relationship to each project. Dashed links show proposed future connections between projects; they are not implemented integrations. [Open the full-size map](assets/portfolio-map.png).*
+### 02 · [Guanlan / Quant: the trader learning application](cases/quant.md)
 
-| Responsibility | Work behind it | Current boundary |
-| --- | --- | --- |
-| **Notice and decide** — preserve the evidence behind a decision, then compare it with later outcomes | [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) | Runnable local release; its replay does not establish predictive accuracy |
-| **Grant and use capabilities** — let a caller request a scoped action without receiving provider credentials | [API Hub](https://github.com/Cornelius-Chen/API-Hub) | Runnable local MVP; live provider use requires explicit activation |
-| **Execute and verify** — keep agent actions within budgets, tool scopes, and human approvals | [IRONMAN Harness](https://github.com/Cornelius-Chen/IRONMAN-Harness) | Runnable offline mission; the included model is scripted |
-| **Review and learn** — separate an agent's completed run from a reusable, independently supported capability | Jervis and SpecMirror local research | Active work; a bounded Jervis evaluation did not support capability gain for one tested sample |
-| **Explain and apply** — design legible interfaces and test the method in real domains | Designer, quant research, and application experiments | Separate local workstreams; no shared production runtime claimed |
+Guanlan owns point-in-time market data, computation, historical replay, and the research simulation. **Lu Dongyangzi** is the persistent trader identity that draws on Jervis workers and versioned experience to ask questions, make research decisions, inspect outcomes, and revise candidate judgments. A local diagnostic exam → targeted study → new-material retest loop has run. It has **not** demonstrated sustained profit, strict historical blindness, or live trading authority.
 
-The intended architecture is **evidence → scoped capability → authorized action → review → evaluated learning**. It is a design direction, not a claim that these repositories already exchange data or run as one service. [The architecture thesis](VISION.md) explains what would have to be true before calling them integrated.
+### 03 · [SpecMirror: inspect the work before accepting it](cases/specmirror.md)
 
-## Three runnable systems
+SpecMirror keeps the engineering graph, scoped task contracts, run evidence, and human acceptance at the original project node. A limited Jervis Designer candidate catalog is connected; a full human-feedback-to-learning loop is still unproven. The workbench distinguishes an agent's report from a person's acceptance.
 
-### 01 / [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) — decisions with a memory
+### 04 · [Local model and tool pipeline](cases/local-stack.md)
 
-> **Recorded example:** two locked Adopt decisions; one later Hit and one Miss. The original decision evidence stays frozen.
+In a separate DeepSeek Harness experiment, **Qwen 3.5 9B** is the active local agent and vision model; **Qwen 3.8 27B** is recorded as a quality alternate but is removed from local routing. The media path uses MCP tools to generate an image with **Qwen-Image-2.1**, then submits an asynchronous **MiniMax H3** image-to-video job with that frame. A second MCP adapter exposes seven bounded **Computer Use** tools over Cua Driver, following observe → act → verify. These are measured local tool pipelines, not a proven Jervis backend.
 
-Public feed items or recorded replay input move through discovery, scoring, a human Adopt/Skip decision, and later outcome review. The local release includes a three-page UI, SQLite state, T0–T2 replay, tests, and a source build. Live input covers three public technology sources. [Run it and inspect the example →](https://github.com/Cornelius-Chen/AttentionOS)
+### 05 · [SuperLocal Harness](https://github.com/Cornelius-Chen/SuperLocal-Harness)
 
-### 02 / [API Hub](https://github.com/Cornelius-Chen/API-Hub) — capability access without passing around keys
+A separate, runnable local mission controller owns scoped tools, budgets, human approvals, verifier steps, and event history. Its public demo uses a scripted model, so it demonstrates the control boundary rather than real-model performance. [Run the offline mission →](https://github.com/Cornelius-Chen/SuperLocal-Harness)
 
-```js
-await hub.invoke("ai.text.generate", { prompt: "Hello" });
-```
+## Smaller runnable systems
 
-The caller names a capability. API Hub keeps the provider credential server-side and owns the grant check, route, usage record, and audit. Calls default to dry-run. The release includes a UI, gateway, Node SDK/CLI/MCP bridge, tests, and a Windows launcher build path. [Explore the local setup →](https://github.com/Cornelius-Chen/API-Hub)
+| Repository | What it demonstrates |
+| --- | --- |
+| [API Hub](https://github.com/Cornelius-Chen/API-Hub) | Capability grants, provider credential custody, dry-run calls, usage, and audit in a local MVP. |
+| [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) | A decision record that freezes original evidence and compares it with later outcomes. |
 
-### 03 / [IRONMAN Harness](https://github.com/Cornelius-Chen/IRONMAN-Harness) — agent work under human authority
-
-> **Recorded example:** an offline Planner → Executor → Verifier mission completes with an intact event chain; a separate write action waits for one-time human approval.
-
-The local control plane owns mission state, model routing, scoped tools, budgets, approval decisions, and audit history. Its one-command demo uses a scripted model, so it demonstrates the execution loop and approval boundary, not real-model task performance. [Run the mission →](https://github.com/Cornelius-Chen/IRONMAN-Harness)
-
-Each repository contains its own setup instructions, architecture explanation, and verification commands.
-
-## Research notes
-
-- [Jervis: evidence before reusable capability](cases/jervis.md) — completed runs, useful retrieval, and capability gain require different proof.
-- [Quant research: information available at decision time](cases/quant.md) — a cutoff-safe blind/reveal method with a documented negative transfer result; no live trading claim.
-
-The public repositories contain selected runnable source and documentation. Local credentials, databases, market datasets, runtime logs, and ongoing private workspaces are outside these releases.
+The public repositories contain selected source and explanations. Ongoing local research, credentials, market datasets, private feedback, and full runtime records are not included in these releases.

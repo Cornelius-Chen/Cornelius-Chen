@@ -1,35 +1,25 @@
-# Quant research · information available at decision time
+# Guanlan / Quant · a trader learning research application
 
-[← Portfolio overview](../README.md)
+[← Portfolio overview](../README.md) · [Architecture map](../assets/portfolio-architecture.svg)
 
-## Research question
+## Division of responsibility
 
-How can an A-share research system tell whether a rule transfers to an unseen window, rather than rewarding a rule for information it could not have known when the decision was made?
+| Part | Role |
+| --- | --- |
+| **Guanlan / Quant** | Market data, time-bounded queries, computation, historical replay and research simulation. |
+| **Jervis** | Replaceable workers, persistent trader experience, source references, versioned candidate judgment and scope. |
+| **Lu Dongyangzi** | The persistent trader identity using those systems to study, decide, inspect outcomes and revise its understanding. |
 
-This is a research-system design case. It does not publish a strategy, recommend a trade, or claim a live execution path.
+The local workflow is: **point-in-time market evidence → domain reasoning → simulated decision and result → diagnosis → source-linked candidate experience → next research task**. Raw market data stays with Guanlan rather than being copied into the Jervis experience record. The relationship is coordinated through existing local processes; the diagram does not imply each arrow is a standalone network service.
 
-## Ownership map
+## What has run
 
+Historical case expansion, active queries, selective restudy and candidate experience updates have been reported in local execution records. A diagnostic loop ran initial simulated exams, identified weak points, revisited relevant cases, formed a candidate update and retested on new material. The records keep model output, simulation facts, and reviewer interpretation distinct. One worker completed but its experience update referenced a missing ID; the original output and failure were retained while the reference was repaired, rather than silently presenting the whole attempt as clean.
 
-Q1 owns market facts and data readiness. Q2 owns research questions and comparison. Q3 serves runtime surfaces and signals; it does not turn a research candidate into a live order. Q4 owns structure-learning assets. Q5 owns routing, permissions, and audit without taking over the other domains' business meaning.
+The next profit-wave learning round calls for broader examples, selected deep study and new tests. Its planned sample counts should never be represented as completed learning until its execution evidence is read back.
 
-## Blind and reveal roles
+## What the results do not say
 
-| Role | May see | Must not do |
-| --- | --- | --- |
-| Blind researcher | Cutoff-safe observations and the transfer package admitted before each decision | Read future outcomes or a teacher's post-window analysis |
-| Opportunity solver | Full realized window for diagnostic comparison | Become the blind decision maker or a reported capability |
-| Research director | Frozen path, outcome, and diagnostic landscape | Rewrite the frozen path after seeing the result |
-| Reviewer | Committed artifacts and the information-boundary record | Treat a successful backtest as proof of transfer or live authority |
+The completed diagnostic involved paused historical replay and simulated cash/inventory, not broker orders or real account returns. Some initial decisions lost money; two avoided part of a passive-hold loss; retests did not establish incremental profit over their relevant baselines. Historical exposure cannot be ruled out completely, and one process review had more information than a strict pre-decision blind reviewer. The results support an inspectable **learning and correction process**, not sustained profitable trading, reliable live reaction or a fully blind transfer result.
 
-The point-in-time rule is `available_at <= decision_cutoff`. A blind iteration freezes one decision trajectory before reveal-side analysis. A later comparison can suggest a new representation, but that representation faces another blind challenge.
-
-## Observed negative result
-
-The recorded N2 transfer challenge did **not** support the N1 hypotheses. The current research status calls for a fresh N2 blind iteration and a different decision structure. A concentrated candidate replay lacks a freeze marker and is not counted as a completed iteration.
-
-This is why the method keeps failed hypotheses and separates a research diagnostic from a strategy. The architecture of a broader Research Center has been written and frozen for review; that document is a design artifact, not evidence that every proposed worker and page is running.
-
-## Next research question
-
-Can a new decision structure transfer across windows without future leakage, and what observations would falsify it before any runtime or trading claim?
+The broader Quant research system also has a cutoff-safe blind/reveal discipline: information is admissible only when `available_at <= decision_cutoff`. A separate N2 transfer challenge did not support the earlier N1 hypotheses. Those negative results remain part of the record rather than being relabeled as a strategy.

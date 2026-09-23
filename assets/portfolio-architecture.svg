@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1280" viewBox="0 0 1600 1280" role="img" aria-labelledby="title desc">
+<title id="title">Cornelius Chen: evidence-led learning systems</title>
+<desc id="desc">A layered portfolio map. Jervis is central with Designer nested as its first domain. Guanlan and Lu Dongyangzi form the trading research application. SpecMirror supports human review. SuperLocal Harness and DeepSeek Harness are separate execution projects. DeepSeek Harness contains the Qwen 9B active route, 27B inactive alternate, Qwen-Image-2.1 to MiniMax H3 media pipeline, and MCP Computer Use through Cua Driver. API Hub and AttentionOS are smaller support systems.</desc>
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#125a69" stroke-width="1.8"/></marker>
+ <style>
+  .bg{fill:#faf8f3}.ink{fill:#172a3b}.muted{fill:#506477}.teal{fill:#125a69}.copper{fill:#a4512d}
+  .card{fill:#fffdf9;stroke:#23465a;stroke-width:2}.soft{fill:#eef6f4;stroke:#6a9c9e;stroke-width:1.5}.warm{fill:#fff3e7;stroke:#b57150;stroke-width:1.5}.quiet{fill:#f4f2ed;stroke:#a9a9a1;stroke-width:1.5}
+  .h1{font:700 35px Georgia,serif;fill:#172a3b}.h2{font:700 28px Georgia,serif;fill:#172a3b}.h3{font:700 20px Georgia,serif;fill:#172a3b}.body{font:16px Arial,sans-serif;fill:#263d4d}.small{font:14px Arial,sans-serif;fill:#506477}.tiny{font:12px Arial,sans-serif;fill:#506477}.tag{font:700 12px Arial,sans-serif;letter-spacing:1.8px;fill:#a4512d}.line{stroke:#125a69;stroke-width:2.4;fill:none;marker-end:url(#arrow)}.dash{stroke:#a4512d;stroke-width:2.4;stroke-dasharray:9 7;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect class="bg" width="1600" height="1280"/>
+<text x="50" y="67" class="tag">CORNELIUS CHEN  /  SYSTEM ARCHITECT</text>
+<text x="50" y="114" class="h1">From evidence to reusable judgment</text>
+<text x="1050" y="78" class="body">I define goals, boundaries and acceptance.</text>
+<text x="1050" y="105" class="small">Models and tools are replaceable workers.</text>
+<line x1="50" y1="139" x2="1550" y2="139" stroke="#9eb4b6"/>
+
+<!-- Core learning architecture -->
+<rect x="50" y="170" width="930" height="390" rx="15" class="card"/>
+<rect x="50" y="170" width="930" height="65" rx="15" fill="#e9f3f0"/>
+<text x="77" y="212" class="h2">Jervis</text><text x="208" y="211" class="body">learning architecture · scoped capability composition</text>
+<text x="77" y="261" class="tag">SOURCE → PRACTICE → JUDGMENT → USE → EVALUATION</text>
+<g>
+ <rect x="75" y="289" width="158" height="72" rx="9" class="soft"/><text x="92" y="319" class="h3">Evidence</text><text x="92" y="342" class="small">sources + provenance</text>
+ <rect x="253" y="289" width="158" height="72" rx="9" class="soft"/><text x="270" y="319" class="h3">Practice</text><text x="270" y="342" class="small">examples + variants</text>
+ <rect x="431" y="289" width="165" height="72" rx="9" class="soft"/><text x="448" y="319" class="h3">Judgment</text><text x="448" y="342" class="small">applies / fails when</text>
+ <rect x="616" y="289" width="158" height="72" rx="9" class="soft"/><text x="633" y="319" class="h3">Scoped use</text><text x="633" y="342" class="small">later real task</text>
+ <rect x="794" y="289" width="160" height="72" rx="9" class="soft"/><text x="811" y="319" class="h3">Evaluation</text><text x="811" y="342" class="small">fresh comparison</text>
+ <path d="M233 325 H250 M411 325 H428 M596 325 H613 M774 325 H791" class="line"/>
+</g>
+<rect x="75" y="393" width="443" height="140" rx="11" class="warm"/>
+<text x="96" y="425" class="tag">FIRST DOMAIN APPRENTICESHIP</text><text x="96" y="459" class="h2">Designer</text>
+<text x="96" y="487" class="body">Domain examples, practice and visual judgment</text>
+<text x="96" y="512" class="small">Bounded integration; original source remains independent</text>
+<rect x="542" y="393" width="412" height="140" rx="11" class="quiet"/>
+<text x="563" y="426" class="tag">DURABLE STATE / REPLACEABLE WORKERS</text>
+<text x="563" y="458" class="body">Scope-filtered experience and task contracts</text>
+<text x="563" y="487" class="body">Completion ≠ capability gain</text>
+<text x="563" y="513" class="small">Local bounded runs; human quality gain unproven</text>
+
+<!-- Finance application -->
+<rect x="1010" y="170" width="540" height="390" rx="15" class="card"/>
+<rect x="1010" y="170" width="540" height="65" rx="15" fill="#e9f3f0"/>
+<text x="1035" y="212" class="h2">Guanlan / Quant</text>
+<text x="1035" y="259" class="tag">TRADER LEARNING APPLICATION</text>
+<rect x="1035" y="285" width="490" height="100" rx="10" class="soft"/>
+<text x="1057" y="321" class="h3">Market facts + historical replay</text>
+<text x="1057" y="350" class="small">Point-in-time queries · computation · simulated actions</text>
+<rect x="1035" y="404" width="490" height="129" rx="10" class="warm"/>
+<text x="1057" y="441" class="h3">Lu Dongyangzi</text>
+<text x="1057" y="472" class="body">Persistent trader identity and candidate experience</text>
+<text x="1057" y="502" class="small">Exam → targeted study → retest executed locally</text>
+<path d="M980 310 H1007" class="line"/><path d="M1010 348 H983" class="line"/>
+<text x="1036" y="548" class="tiny">No verified profit, live account or broker orders</text>
+
+<!-- Review and mission control are distinct -->
+<rect x="50" y="601" width="740" height="177" rx="15" class="card"/>
+<text x="75" y="640" class="tag">HUMAN REVIEW</text><text x="75" y="681" class="h2">SpecMirror</text>
+<text x="75" y="711" class="body">Project graph · scoped contracts · run evidence · acceptance</text>
+<text x="75" y="740" class="small">Limited Jervis Designer catalog connected; feedback-to-learning unproven</text>
+<path d="M260 560 V598" class="line"/><path d="M525 601 V563" class="dash"/>
+<text x="294" y="581" class="tiny">candidate catalog</text><text x="548" y="582" class="tiny">future feedback</text>
+<rect x="820" y="601" width="730" height="177" rx="15" class="card"/>
+<text x="845" y="640" class="tag">SEPARATE PUBLIC EXECUTION RELEASE</text>
+<text x="845" y="681" class="h2">SuperLocal Harness</text>
+<text x="845" y="711" class="body">Scoped missions · tools · approval · verifier · audit</text>
+<text x="845" y="740" class="small">Runnable scripted offline demo; no verified Jervis adapter</text>
+
+<!-- Model and tool pipeline -->
+<rect x="50" y="810" width="1500" height="338" rx="15" class="card"/>
+<rect x="50" y="810" width="1500" height="62" rx="15" fill="#e9f3f0"/>
+<text x="77" y="851" class="h2">DeepSeek Harness</text>
+<text x="346" y="850" class="body">local model, media and MCP tool experiments · separate from Jervis</text>
+<rect x="76" y="898" width="350" height="102" rx="10" class="soft"/>
+<text x="96" y="928" class="tag">MODEL ROUTING</text>
+<text x="96" y="957" class="h3">Qwen 3.5 9B</text><text x="248" y="957" class="small">active agent + vision</text>
+<text x="96" y="982" class="small">Qwen 3.8 27B: alternate, removed from local routing</text>
+<rect x="448" y="898" width="1076" height="102" rx="10" class="warm"/>
+<text x="470" y="928" class="tag">MEDIA PIPELINE / MCP</text>
+<text x="470" y="960" class="h3">Qwen-Image-2.1</text><text x="718" y="960" class="body">first frame → async job →</text><text x="966" y="960" class="h3">MiniMax H3</text>
+<text x="470" y="982" class="small">ComfyUI image output, image-to-video result and artifact receipt</text>
+<rect x="76" y="1020" width="1448" height="100" rx="10" class="soft"/>
+<text x="97" y="1050" class="tag">COMPUTER USE / MCP</text>
+<text x="97" y="1081" class="h3">7 bounded tools</text><text x="288" y="1081" class="body">→ Cua Driver → observe → act → read back</text>
+<text x="97" y="1104" class="small">Desktop actions demonstrated; general 9B task reliability remains limited</text>
+
+<text x="50" y="1190" class="tag">SMALLER RUNNABLE SYSTEMS</text>
+<rect x="323" y="1161" width="404" height="55" rx="9" class="quiet"/><text x="345" y="1196" class="h3">API Hub</text><text x="465" y="1195" class="small">capability grants and audit</text>
+<rect x="747" y="1161" width="480" height="55" rx="9" class="quiet"/><text x="770" y="1196" class="h3">AttentionOS</text><text x="944" y="1195" class="small">decision and outcome records</text>
+<line x1="50" y1="1244" x2="1550" y2="1244" stroke="#9eb4b6"/>
+<text x="50" y="1264" class="tiny">Solid arrow = bounded local connection. Dashed arrow = future handoff. Cards without an arrow are separate systems.</text>
+</svg>

@@ -1,34 +1,29 @@
-# Jervis · evidence before reusable capability
+# Jervis · a learning architecture with evidence boundaries
 
-[← Portfolio overview](../README.md)
+[← Portfolio overview](../README.md) · [Architecture map](../assets/portfolio-architecture.svg)
 
-## Research question
+## The architectural question
 
-How can an agent system accumulate useful experience while keeping a human-verifiable boundary between a recorded event, a candidate insight, and a stable capability?
+How does a model use external examples and practice to form a conditional domain judgment, apply it on a later task, and learn from the result—without letting one persuasive output certify its own improvement?
 
-The target measure is **human minutes per verified outcome**, rather than the number of agent runs. I treated the durable record and promotion decision as separate parts of the design because a run can complete without demonstrating improvement on later tasks.
+Jervis is my answer in progress: a **persistent project and experience layer around replaceable model workers**. I define the source boundary, domain scope, evaluation and acceptance rules. Each run can consume selected prior experience while the project state, evidence references, failures and candidate revisions survive worker replacement.
 
-## The decisions
+## The learning loop
 
-| Pressure | Design choice | What the choice prevents |
-| --- | --- | --- |
-| Chat history is easy to use as memory | Keep durable state in structured records; compile context for a task | An untraceable conversation becoming the source of truth |
-| A plausible lesson may be wrong elsewhere | Keep raw evidence immutable and candidate assets quarantined | Silent promotion of an attractive but untested rule |
-| The producing agent has an incentive to call its result successful | Separate execution from independent evaluation and promotion authority | Self-certification of capability gain |
-| More memory can make retrieval noisier | Record `applies_when`, `fails_when`, provenance, and evaluation references | A global dump that ignores task scope and failure conditions |
+1. **Admit a source and its context.** Preserve provenance and what the source actually shows.
+2. **Practice and compare.** Create variations, inspect where a proposed judgment works and fails, and allow a `no_update` result.
+3. **Keep a candidate.** State its `applies_when` and `fails_when`; keep it scoped and experimental.
+4. **Use it on a later task.** Compile only relevant context for a worker; avoid placing all accumulated material in a global prompt.
+5. **Evaluate separately.** A completed run and useful retrieval are not proof of capability gain. A fresh comparison and independent review are needed before stronger claims.
 
-## Evidence path
+The system also composes work: shared project entities and small contracts let scoped workers handle parts of a task, with checkpoints, successor recovery and stale-result rejection in bounded local tests. These are execution properties; they do not automatically establish better design judgment.
 
-Evidence moves from admitted sources to a quarantined candidate, then through a frozen fresh-task comparison and an independent review before any versioned promotion decision.
+## Designer is the first domain, not a peer box
 
-The `Registry` and `EventLog` are shared records for the learning runtime. A new branch or experiment should not create a second, competing authority. Completion of source reading, a useful retrieval, and capability gain are three different observations.
+Designer began as a separate design learning system and remains the source of its methods and material. A bounded Jervis integration has mapped selected Designer entry points, exercised source-backed practice and comparison, and used scoped domain guidance on design briefs. Core chooses and coordinates the domain capability; Designer retains the visual methods, examples and applicability limits. This is why the [architecture map](../assets/portfolio-architecture.svg) nests Designer inside the Jervis learning zone while acknowledging its independent origin.
 
-## Current evidence ceiling
+## Evidence ceiling
 
-- The governed program ledger reports foundation audit complete, with the Designer structured migration phase active. Later phases are locked until their gates are met.
-- A bounded local learning runtime and blind evaluation exist. For one tested sample and configuration, the independent review classified capability gain as **not supported**. That result is specific to the test; it is not a claim that learning is impossible.
-- The diagram is the design logic for the system. It does not claim that every planned phase or domain is operational.
+The local delivery records report bounded Designer apprenticeship, scoped use, multi-project coordination and worker recovery. The governed program ledger still has the structured Designer migration active and later phases locked. Earlier independent comparisons were mixed or showed no gain; newer judgments remain experimental. There is no demonstrated human preference advantage, general autonomous learning, model-weight training, or measured reduction in human time per verified outcome.
 
-## Next research question
-
-Which kinds of source-attributed candidate knowledge improve a fresh task enough to justify their retrieval and maintenance cost, under an independently locked evaluation?
+**Design decision:** the state machine for a learning candidate and the decision to promote a capability belong to different authorities. This keeps a useful story about progress from becoming an unreviewable claim of improvement.
