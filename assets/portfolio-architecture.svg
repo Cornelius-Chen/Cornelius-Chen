@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1280" viewBox="0 0 1600 1280" role="img" aria-labelledby="title desc">
 <title id="title">Cornelius Chen: evidence-led learning systems</title>
-<desc id="desc">A layered portfolio map. Jervis is central with Designer nested as its first domain. Guanlan and Lu Dongyangzi form the trading research application. SpecMirror supports human review. SuperLocal Harness and DeepSeek Harness are separate execution projects. DeepSeek Harness contains the Qwen 9B active route, 27B inactive alternate, Qwen-Image-2.1 to MiniMax H3 media pipeline, and MCP Computer Use through Cua Driver. API Hub and AttentionOS are smaller support systems.</desc>
+<desc id="desc">A layered portfolio map. Jervis is central with Designer nested as its first domain. Puretelligence and Lu Dongyangzi form the trading research application. SpecMirror supports human review. SuperLocal Harness and DeepSeek Harness are separate execution projects. DeepSeek Harness contains the Qwen 9B active route, 27B inactive alternate, Qwen-Image-2.1 to MiniMax H3 media pipeline, and MCP Computer Use through Cua Driver. API Hub and AttentionOS are smaller support systems.</desc>
 <defs>
  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#125a69" stroke-width="1.8"/></marker>
  <style>
@@ -45,7 +45,7 @@
 <!-- Finance application -->
 <rect x="1010" y="170" width="540" height="390" rx="15" class="card"/>
 <rect x="1010" y="170" width="540" height="65" rx="15" fill="#e9f3f0"/>
-<text x="1035" y="212" class="h2">Guanlan / Quant</text>
+<text x="1035" y="212" class="h2">Puretelligence</text>
 <text x="1035" y="259" class="tag">TRADER LEARNING APPLICATION</text>
 <rect x="1035" y="285" width="490" height="100" rx="10" class="soft"/>
 <text x="1057" y="321" class="h3">Market facts + historical replay</text>

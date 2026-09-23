@@ -4,55 +4,45 @@
 
 M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
 
-![Illustrated research studio: Cornelius at the center, with learning, design, trader research, review, media and desktop-control workspaces around him](assets/portfolio-studio.png)
-
-*An illustrated view of the workbench. The diagram below names the actual system boundaries and connection states.*
-
 ## The architecture I am building
 
 Jervis is the center of this research portfolio. It asks how a model can turn examples, practice, and feedback into **scoped, reusable domain judgment**—and how a later task can test whether that judgment actually helps. I set the system goals, boundaries, and acceptance criteria; the models and tools are replaceable workers inside that design.
 
-**Start with the work:** [run Jervis learning](https://github.com/Cornelius-Chen/Jervis) · [run Guanlan's decision replay](https://github.com/Cornelius-Chen/Guanlan-Quant) · [read the historical Designer case](cases/jervis.md#the-system-in-one-example) · [see the ownership map](VISION.md#responsibilities-and-actual-boundaries)
+**Start with the research:** [Jervis learning architecture](https://github.com/Cornelius-Chen/Jervis) · [Puretelligence trader research](https://github.com/Cornelius-Chen/Puretelligence) · [SpecMirror engineering review](https://github.com/Cornelius-Chen/SpecMirror) · [system boundaries](VISION.md)
 
-[![Layered portfolio architecture showing Jervis, its Designer domain, the Guanlan trading research application, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
+[![Layered portfolio architecture showing Jervis, its Designer domain, Puretelligence trader research, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
 
 *Read the diagram as a map of responsibility. Solid links mark bounded local connections supported by implementation or execution records. Dashed links mark an intended handoff whose full effect is not yet demonstrated. Separate lanes are not a claim that all projects run as one platform.* [Open the full diagram](assets/portfolio-architecture.svg) · [Read the architecture thesis](VISION.md)
 
 | Architecture decision | Observed local behavior | Evidence limit |
 | --- | --- | --- |
 | **A candidate has to survive scope selection.** | Jervis reused one Designer judgment on a new brief and rejected a narrower judgment on another. | The model comparison was mixed; human quality gain remains unverified. |
-| **Market facts and trader experience have different owners.** | Guanlan supplied time-bounded evidence and simulation; Jervis retained candidate experience for a continuing trader identity. | Historical simulation did not establish profitable live trading. |
+| **Market facts and trader experience have different owners.** | Puretelligence's underlying Guanlan system supplied time-bounded evidence and simulation; Jervis retained candidate experience for a continuing trader identity. | Historical simulation did not establish profitable live trading. |
 | **Completion and acceptance have separate records.** | SpecMirror displays scoped runs and their evidence at the engineering node. | A full human-feedback-to-learning cycle has not been demonstrated. |
 
-### 01 · [Jervis: learning and capability composition](cases/jervis.md)
+### 01 · [Jervis: learning architecture](https://github.com/Cornelius-Chen/Jervis)
 
-The core loop is **source → practice → conditional judgment → scoped use → evaluation**. Durable project state and source references outlive a particular model worker. Jervis selects domain capability by scope, composes work through shared entities and contracts, and preserves the distinction between a completed run, a useful retrieval, and proven capability gain.
+**Question.** Can a judgment survive one task, remain bound to its source and scope, and be evaluated on a later task? Designer is Jervis's first domain apprenticeship. Mission holds the work graph; Registry and EventLog preserve versions and transitions; replaceable workers receive bounded WorkOrders.
 
-**Designer sits inside this architecture as the first domain apprenticeship.** It originated as an independent design learning system; a bounded integration now lets Jervis use selected Designer methods and evidence for real design work. This is an integration of domain capability, not a claim that the original Designer repository was absorbed or that design quality improved in a human evaluation.
+![Jervis research mechanism from source practice through versioned candidate and later scope selection](assets/jervis-research-loop.svg)
 
-The [public Jervis repository](https://github.com/Cornelius-Chen/Jervis) contains runnable slices of the original Mission, Registry and Designer learning code. One synthetic response replay produces two complete pages: a new task uses the tentative judgment; another rejects it. A **separate composition replay** changes wood to gravel, rebuilds only the sound and its dependent artifacts, keeps the motion and note, and rejects a late worker result. Browser behavior, WAV output and persisted versions are checked. These replays are separate from the historical apprenticeship.
+**Observed.** An offline replay stores one experimental Designer judgment, selects it for one fresh brief, rejects it for another, commits both pages and checks browser behavior. A separate composition run rebuilds dependent artifacts after a shared fact changes and rejects a stale worker result. Fixed synthetic responses make these reproducible mechanism tests. **Limit:** historical model comparisons were mixed; human-rated capability gain remains unverified. [Research case and source evidence →](cases/jervis.md)
 
-<p align="center"><img src="assets/jervis-workshop.png" width="48%" alt="Workshop page using a conditional design judgment"><img src="assets/jervis-dispatch.png" width="48%" alt="Dispatch table rejecting that design judgment"></p>
+### 02 · [Puretelligence: continuing-trader research](https://github.com/Cornelius-Chen/Puretelligence)
 
-[Inspect the separate wood → gravel composition, including both WAV files and the stale-result receipt →](https://github.com/Cornelius-Chen/Jervis/blob/main/docs/case-composition.md)
+**Question.** Can a trader revise experience without leaking later outcomes into an earlier decision or collapsing selling, buying and switching into one action? Puretelligence presents the research architecture built in Guanlan. Its market system owns point-in-time facts and simulation; Jervis owns candidate experience; Lu Dongyangzi is the continuing trader identity.
 
-### 02 · [Guanlan / Quant: the trader learning application](cases/quant.md)
+![Puretelligence research mechanism from cutoff evidence through independent action comparisons and provisional revision](assets/puretelligence-research-loop.svg)
 
-Guanlan owns point-in-time market data, computation, historical replay, and the research simulation. **Lu Dongyangzi** is the persistent trader identity that draws on Jervis workers and versioned experience to ask questions, make research decisions, inspect outcomes, and revise candidate judgments. A local diagnostic exam → targeted study → new-material retest loop has run. It has **not** demonstrated sustained profit, strict historical blindness, or live trading authority.
+**Observed.** The historical local study completed diagnostic cases, targeted study and new-material retests, leaving a candidate revision unpromoted. The public source release runs invented market paths through the original replay modules; a separate bridge checks exact Jervis Registry versions and source attachments before a fixed-action retest. **Limit:** the public fixtures do not replay the private worker, establish a blind gain, or show live fills. [Research case and evidence boundary →](cases/quant.md)
 
-The [public Guanlan research slice](https://github.com/Cornelius-Chen/Guanlan-Quant) runs selected original Q1–Q5 modules on invented data. Its four-way comparison shows why B beating cash does not justify selling A: the simulated switch trails holding A, while existing cash can buy B independently. A [second synthetic example](https://github.com/Cornelius-Chen/Guanlan-Quant/blob/main/docs/jervis-bridge.md) resolves exact Jervis Registry versions and source attachments before adding a candidate reference to a Guanlan research packet, then compares four fixed actions on another invented path. Neither example invokes the historical Jervis trader worker or measures learned trading ability.
+### 03 · [SpecMirror: engineering review at the source](https://github.com/Cornelius-Chen/SpecMirror)
 
-[![Synthetic Guanlan research comparison of hold A, sell A, switch A to B, and buy B with existing cash](assets/guanlan-synthetic-decisions.png)](https://github.com/Cornelius-Chen/Guanlan-Quant)
+**Question.** Can one editable project detail become scoped agent work whose exact changes return to the same node for human review? The public tests cover two segments: a feedback-to-exact-run service/UI path, and a separate dual-agent service path with isolated claims, artifacts, token deltas, review calls and persistence after restart.
 
-*Synthetic prices and proxy fills only. [Run and inspect the evidence →](https://github.com/Cornelius-Chen/Guanlan-Quant)*
+![SpecMirror engineering map with separately tested feedback binding and two-agent run mechanics](assets/specmirror-dual-agent-loop.svg)
 
-### 03 · [SpecMirror: inspect the work before accepting it](https://github.com/Cornelius-Chen/SpecMirror)
-
-SpecMirror keeps the engineering graph, scoped task contracts, run evidence, and human acceptance at the original project node. Its [public source slice](https://github.com/Cornelius-Chen/SpecMirror) opens as a local workbench and includes a real service route test: a source file changes, is checked, and returns through the **exact submitted run ID** to the original opinion. The interface recording shows that review surface on an isolated project fixture; a person's production acceptance is not claimed. A limited Jervis Designer candidate catalog is connected in the local project, while feedback-to-learning remains unproven.
-
-[![SpecMirror isolated interface: the original opinion beside the exact submitted result and affected graph nodes](assets/specmirror-review-at-origin.png)](https://github.com/Cornelius-Chen/SpecMirror)
-
-[Watch the isolated interface recording and inspect the source-backed loop →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/review-at-origin.md)
+**Limit:** the two paths have not been joined into one live autonomous run with a real human acceptance. [Engineering details →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/dual-agent-engineering.md) · [English UI evidence →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/review-at-origin.md)
 
 ### 04 · [Local model and tool pipeline](cases/local-stack.md)
 

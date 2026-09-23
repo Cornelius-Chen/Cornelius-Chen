@@ -10,7 +10,7 @@ The question behind this portfolio is: **how can an AI system accumulate useful 
 | --- | --- | --- |
 | **Jervis** | Persistent project state, scoped domain experience, replaceable workers, candidate judgment, learning evaluation | Central learning architecture. [Two public offline runs](https://github.com/Cornelius-Chen/Jervis) verify conditional Designer selection and, separately, partial composition rebuild plus stale-result rejection. Historical apprenticeship and trader work remain distinct evidence. |
 | **Designer** | Design examples, methods, comparison, visual judgment, and limits of applicability | The first Jervis domain apprenticeship. The original Designer project remains an independent source of domain material. |
-| **Guanlan / Quant** | Time-bounded market facts, computation, historical replay, research simulation | The [public runnable Q1–Q5 slice](https://github.com/Cornelius-Chen/Guanlan-Quant) verifies research contracts on invented data. A separate new adapter resolves exact Jervis candidate and source versions before a synthetic retest. The historical Lu Dongyangzi coordinator is not in this public slice; private market data stays with Guanlan. |
+| **Puretelligence / Quant** | Time-bounded market facts, computation, historical replay, research simulation | The [public runnable research slice](https://github.com/Cornelius-Chen/Puretelligence) verifies contracts on invented data. A separate new adapter resolves exact Jervis candidate and source versions before a synthetic retest. The historical Lu Dongyangzi coordinator is not in this public slice; private market data stays in the underlying Guanlan system. |
 | **SpecMirror** | Project graph, file scope, run evidence, human review and acceptance | [Public source and isolated review demonstrations](https://github.com/Cornelius-Chen/SpecMirror) show exact feedback-to-run binding and source proof. A limited Jervis Designer catalog is connected locally; production human acceptance and feedback-to-learning have no demonstrated completed receipt. |
 | **DeepSeek Harness** | Local model, media, MCP, and Computer Use experiments | Qwen 9B, Qwen-Image-2.1, MiniMax H3, and Cua Driver have bounded local receipts. No verified Jervis backend integration. |
 | **SuperLocal Harness** | Mission execution, scoped tools, approval, verifier, audit | An independently runnable public offline demo; no verified direct SpecMirror or Jervis adapter. |
@@ -20,7 +20,7 @@ The question behind this portfolio is: **how can an AI system accumulate useful 
 
 **Design domain:** admitted source or example → practice and variation → conditional design judgment → scope-filtered use on a new brief → comparison and review. The implementation can carry an experimental judgment forward; it cannot yet claim a human-validated quality gain.
 
-**Trader research:** Guanlan's point-in-time evidence → Jervis worker's domain reasoning → historical replay and simulated action → outcome diagnosis → source-linked candidate experience → a later research question. The diagnostic learning loop has executed; profitability, live response, and real order execution remain unproven.
+**Trader research:** Puretelligence's point-in-time evidence → Jervis worker's domain reasoning → historical replay and simulated action → outcome diagnosis → source-linked candidate experience → a later research question. The diagnostic learning loop has executed; profitability, live response, and real order execution remain unproven.
 
 ## The local tool work
 
