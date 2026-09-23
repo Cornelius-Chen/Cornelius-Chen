@@ -1,6 +1,6 @@
 # Local model, media and Computer Use pipelines
 
-[← Portfolio overview](../README.md) · [Architecture map](../assets/portfolio-architecture.svg)
+[← Portfolio overview](../README.md) · [Public source and receipts](https://github.com/Cornelius-Chen/Local-Pipelines) · [Architecture map](../assets/portfolio-architecture.svg)
 
 This is a **separate DeepSeek Harness engineering track**. It tests how a local model invokes media and desktop tools through explicit MCP surfaces. It is not the published SuperLocal Harness release and has not been verified as Jervis's execution backend.
 
@@ -17,7 +17,7 @@ This is a **separate DeepSeek Harness engineering track**. It tests how a local 
     → status / result → MP4 artifact in the transcript
 ```
 
-The image backend was selected after a local A/B comparison with the previous image model. The video job is asynchronous because generation takes longer than a normal tool call. The backend releases the reasoning model's GPU residency before heavy video generation and returns the artifact only after the job reports completion. A recorded local run reached the resulting MP4; this is a media-pipeline receipt, not a claim about visual taste or general creative quality.
+The image backend was selected after a local A/B comparison with the previous image model. The video job is asynchronous because generation takes longer than a normal tool call. The backend releases the reasoning model's GPU residency before heavy video generation and returns the artifact only after the job reports completion. The [public release](https://github.com/Cornelius-Chen/Local-Pipelines) includes a matching first frame, MP4 and redacted job record from one local run; this is a media-pipeline receipt, not a claim about visual taste or general creative quality.
 
 ## MCP Computer Use
 

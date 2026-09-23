@@ -44,9 +44,9 @@ Jervis is the center of this research portfolio. It asks how a model can turn ex
 
 **Limit:** the two paths have not been joined into one live autonomous run with a real human acceptance. [Engineering details →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/dual-agent-engineering.md) · [English UI evidence →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/review-at-origin.md)
 
-### 04 · [Local model and tool pipeline](cases/local-stack.md)
+### 04 · [Local model, media and Computer Use pipelines](https://github.com/Cornelius-Chen/Local-Pipelines)
 
-In a separate DeepSeek Harness experiment, **Qwen 3.5 9B** is the active local agent and vision model; **Qwen 3.8 27B** is recorded as a quality alternate but is removed from local routing. The media path uses MCP tools to generate an image with **Qwen-Image-2.1**, then submits an asynchronous **MiniMax H3** image-to-video job with that frame. A second MCP adapter exposes seven bounded **Computer Use** tools over Cua Driver, following observe → act → verify. These are measured local tool pipelines, not a proven Jervis backend.
+In a separate DeepSeek Harness experiment, **Qwen 3.5 9B** is the active local agent and vision model; **Qwen 3.8 27B** is a recorded quality alternate removed from local routing. One MCP path carries a **Qwen-Image-2.1** first frame into an asynchronous **MiniMax H3** image-to-video job, with a completed same-job MP4 and receipt. Another narrows **Cua Driver** to seven bounded Computer Use tools and requires observe → act → verify. The [public source and evidence](https://github.com/Cornelius-Chen/Local-Pipelines) include both wrappers, offline contract checks, the actual media pair and a redacted deterministic Notepad run. These pipelines are not a verified Jervis backend. [Architecture and limits →](cases/local-stack.md)
 
 ### 05 · [SuperLocal Harness](https://github.com/Cornelius-Chen/SuperLocal-Harness)
 
