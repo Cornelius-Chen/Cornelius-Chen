@@ -13,14 +13,12 @@ I design systems by making the question, information boundary, decision rule, an
 **Question.** A successful task can leave useful traces, but task success alone does not prove that a reusable capability improved future work. How should evidence move toward a stable, reusable asset without granting the agent authority to approve its own output?
 
 ```mermaid
-flowchart TD
-    A[Evidence + provenance] --> B[Quarantined candidate]
-    B --> C[Task-scoped reuse]
-    C --> D[Independent test]
-    D --> E{Gain supported?}
-    E -- No / unclear --> F[Retain failure]
-    F --> B
-    E -- Reviewed yes --> G[Versioned promotion]
+flowchart LR
+    A[Evidence] --> B[Candidate]
+    B --> C[Independent test]
+    C --> D{Gain?}
+    D -- No --> E[Retain failure]
+    D -- Yes, reviewed --> F[Versioned asset]
 ```
 
 The key separation is **recorded run → useful retrieval → demonstrated capability gain**. A local blind evaluation completed, but did not support a capability-gain claim for its tested sample. The broader program remains in an active implementation phase. [Read the design decisions and current evidence →](cases/jervis.md)
@@ -30,14 +28,13 @@ The key separation is **recorded run → useful retrieval → demonstrated capab
 **Question.** A backtest can look convincing when later market information slips into an earlier decision, or when a good rule is selected on the same window used to judge it. I separate the information available to a blind researcher from the information used for later diagnosis.
 
 ```mermaid
-flowchart TD
-    A[Point-in-time data] --> B[Blind decision]
-    B --> C[Frozen path]
-    C --> D[Reveal + leakage audit]
-    D --> E[Unseen-window test]
-    E --> F{Transfer supported?}
-    F -- No --> G[Keep failure; revise idea]
-    F -- Supported --> H[Next bounded test]
+flowchart LR
+    A[Time-safe data] --> B[Frozen blind path]
+    B --> C[Reveal audit]
+    C --> D[Unseen window]
+    D --> E{Transfer?}
+    E -- No --> F[Revise idea]
+    E -- Supported --> G[Retest]
 ```
 
 The first N1-to-N2 transfer challenge found that the N1 hypotheses did not transfer. That result is a reason to change the research question, not a trading-performance claim. This case describes a bounded research method; it does not represent a live trading system. [Read the method and ownership map →](cases/quant.md)
