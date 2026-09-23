@@ -19,19 +19,7 @@ The target measure is **human minutes per verified outcome**, rather than the nu
 
 ## Evidence path
 
-```mermaid
-flowchart TD
-    Q[Task question] --> S[Select admitted sources]
-    S --> R[Record source, scope, and observed content]
-    R --> C[Candidate or failure record]
-    C --> T[Freeze test inputs and judgment rule]
-    T --> P[Perform fresh task with or without retrieval]
-    P --> V[Independent comparison]
-    V --> O{Outcome}
-    O -- Unsupported --> U[Retain evidence; revise candidate]
-    O -- Supported --> A[Review provenance and failure bounds]
-    A --> M[Versioned promotion decision]
-```
+Evidence moves from admitted sources to a quarantined candidate, then through a frozen fresh-task comparison and an independent review before any versioned promotion decision.
 
 The `Registry` and `EventLog` are shared records for the learning runtime. A new branch or experiment should not create a second, competing authority. Completion of source reading, a useful retrieval, and capability gain are three different observations.
 

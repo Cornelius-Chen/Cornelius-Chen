@@ -10,17 +10,6 @@ This is a research-system design case. It does not publish a strategy, recommend
 
 ## Ownership map
 
-```mermaid
-flowchart LR
-    Q1[Q1 · Market facts and data quality] --> Q2[Q2 · Strategy research and replay]
-    Q1 --> Q4[Q4 · Structure learning and sample construction]
-    Q2 -- reviewed output only --> Q3[Q3 · Runtime and signal serving]
-    Q4 -- admitted structure only --> Q3
-    Q5[Q5 · Routing, permissions, and audit] -. governs .-> Q1
-    Q5 -. governs .-> Q2
-    Q5 -. governs .-> Q3
-    Q5 -. governs .-> Q4
-```
 
 Q1 owns market facts and data readiness. Q2 owns research questions and comparison. Q3 serves runtime surfaces and signals; it does not turn a research candidate into a live order. Q4 owns structure-learning assets. Q5 owns routing, permissions, and audit without taking over the other domains' business meaning.
 

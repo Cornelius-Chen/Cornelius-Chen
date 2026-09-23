@@ -6,39 +6,25 @@ M.A. Statistics, Columbia University · expected 2027
 
 [LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
 
-I design systems by making the question, information boundary, decision rule, and evidence for a claim visible. These notes show that reasoning through two ongoing local projects. They are design case studies, not releases of the full private workspaces.
+I build local systems where the input, decision boundary, and later evidence can be inspected. These two public source releases show complete, runnable workflows and the limits of what their tests establish.
 
-## 01 · Jervis — when may an agent reuse what it learned?
+## Built projects
 
-**Question.** A successful task can leave useful traces, but task success alone does not prove that a reusable capability improved future work. How should evidence move toward a stable, reusable asset without granting the agent authority to approve its own output?
+### [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) · decisions that can be revisited
 
-```mermaid
-flowchart TB
-    A[Evidence + provenance] --> B[Quarantined candidate]
-    B --> C{Independent test}
-    C -- No gain --> D[Retain failure]
-    C -- Gain + review --> E[Versioned asset]
-```
+![AttentionOS architecture](https://raw.githubusercontent.com/Cornelius-Chen/AttentionOS/main/docs/images/architecture.png)
 
-The key separation is **recorded run → useful retrieval → demonstrated capability gain**. A local blind evaluation completed, but did not support a capability-gain claim for its tested sample. The broader program remains in an active implementation phase. [Read the design decisions and current evidence →](cases/jervis.md)
+Public feed items or a recorded replay pass through event discovery and scoring. A human locks an Adopt/Skip decision with its original evidence; later observations produce a reasoned outcome without rewriting that snapshot. The release includes a three-page local UI, SQLite persistence, T0–T2 replay, 30 passing tests, and a source build. Live input covers three public technology sources. Replay demonstrates the workflow and time boundary; it does not validate prediction accuracy. [Source and three-minute walkthrough →](https://github.com/Cornelius-Chen/AttentionOS)
 
-## 02 · Quant — how do we learn without seeing the future?
+### [API Hub](https://github.com/Cornelius-Chen/API-Hub) · capabilities instead of shared provider keys
 
-**Question.** A backtest can look convincing when later market information slips into an earlier decision, or when a good rule is selected on the same window used to judge it. I separate the information available to a blind researcher from the information used for later diagnosis.
+![API Hub architecture](https://raw.githubusercontent.com/Cornelius-Chen/API-Hub/main/docs/images/architecture.png)
 
-```mermaid
-flowchart TB
-    A[Time-safe data] --> B[Frozen blind path]
-    B --> C[Reveal audit]
-    C --> D{Unseen-window transfer}
-    D -- Failed --> E[Revise hypothesis]
-    D -- Supported --> F[Retest]
-```
+Applications and short-lived agents receive scoped capability access. The local gateway checks policy and grants, routes through reviewed adapters, and records usage and audit. Provider credentials are write-only in the control plane and absent from client responses. Calls default to dry-run; a live provider request needs explicit local activation. The source release includes the UI, gateway, Node SDK/CLI/MCP bridge, tests, and Windows launcher build path. It is a local MVP, not a production secret vault. [Source and local setup →](https://github.com/Cornelius-Chen/API-Hub)
 
-The first N1-to-N2 transfer challenge found that the N1 hypotheses did not transfer. That result is a reason to change the research question, not a trading-performance claim. This case describes a bounded research method; it does not represent a live trading system. [Read the method and ownership map →](cases/quant.md)
+## Research and design notes
 
-## How to read these cases
+- [Jervis: evidence before reusable capability](cases/jervis.md) — why a completed agent run, useful retrieval, and demonstrated capability gain require different evidence. The broader local program remains in implementation.
+- [A-share quant research: information available at decision time](cases/quant.md) — a cutoff-safe blind/reveal method and a documented negative transfer result. This is research, not a live trading system.
 
-Each case follows the same path: **problem → information boundary → design choice → test → observed result → next question**. The diagrams summarize decisions; the case pages distinguish implemented local paths from design-stage components and explain what the evidence does not establish.
-
-Only selected diagrams and design notes are published here. Local databases, credentials, market datasets, runtime logs, and the full project trees are outside this portfolio.
+The public repositories contain selected runnable source and documentation. Local credentials, databases, market datasets, runtime logs, and ongoing private workspaces are outside these releases.
