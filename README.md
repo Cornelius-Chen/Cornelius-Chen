@@ -12,15 +12,21 @@ I build local systems where the input, decision boundary, and later evidence can
 
 ### [AttentionOS](https://github.com/Cornelius-Chen/AttentionOS) · decisions that can be revisited
 
-![AttentionOS architecture](https://raw.githubusercontent.com/Cornelius-Chen/AttentionOS/main/docs/images/architecture.png)
+> **T0:** two stories, two locked Adopt decisions. **T2:** one Hit, one Miss. The original evidence remains frozen.
 
-Public feed items or a recorded replay pass through event discovery and scoring. A human locks an Adopt/Skip decision with its original evidence; later observations produce a reasoned outcome without rewriting that snapshot. The release includes a three-page local UI, SQLite persistence, T0–T2 replay, 30 passing tests, and a source build. Live input covers three public technology sources. Replay demonstrates the workflow and time boundary; it does not validate prediction accuracy. [Source and three-minute walkthrough →](https://github.com/Cornelius-Chen/AttentionOS)
+Public feed items or a recorded replay pass through event discovery and scoring. A human locks an Adopt/Skip decision with its evidence; later observations produce a reasoned outcome. The local release has a three-page UI, SQLite persistence, T0–T2 replay, 30 passing tests, and a source build. Live input covers three public technology sources. Replay demonstrates the workflow and time boundary; it does not validate prediction accuracy. [Run the source and inspect the example →](https://github.com/Cornelius-Chen/AttentionOS)
 
 ### [API Hub](https://github.com/Cornelius-Chen/API-Hub) · capabilities instead of shared provider keys
 
-![API Hub architecture](https://raw.githubusercontent.com/Cornelius-Chen/API-Hub/main/docs/images/architecture.png)
+From a configured server-side client:
 
-Applications and short-lived agents receive scoped capability access. The local gateway checks policy and grants, routes through reviewed adapters, and records usage and audit. Provider credentials are write-only in the control plane and absent from client responses. Calls default to dry-run; a live provider request needs explicit local activation. The source release includes the UI, gateway, Node SDK/CLI/MCP bridge, tests, and Windows launcher build path. It is a local MVP, not a production secret vault. [Source and local setup →](https://github.com/Cornelius-Chen/API-Hub)
+```js
+await hub.invoke("ai.text.generate", { prompt: "Hello" });
+```
+
+The caller names a capability; API Hub owns the provider credential, grant check, route, usage record, and audit. Calls default to dry-run; a live provider request needs explicit local activation. The source release includes the UI, gateway, Node SDK/CLI/MCP bridge, tests, and Windows launcher build path. It is a local MVP, not a production secret vault. [Explore the source and local setup →](https://github.com/Cornelius-Chen/API-Hub)
+
+The project READMEs contain the [AttentionOS architecture figure](https://github.com/Cornelius-Chen/AttentionOS#architecture) and [API Hub architecture figure](https://github.com/Cornelius-Chen/API-Hub#architecture), alongside runnable entry points and deeper documentation.
 
 ## Research and design notes
 
