@@ -46,9 +46,13 @@ The [public Guanlan research slice](https://github.com/Cornelius-Chen/Guanlan-Qu
 
 *Synthetic prices and proxy fills only. [Run and inspect the evidence →](https://github.com/Cornelius-Chen/Guanlan-Quant)*
 
-### 03 · [SpecMirror: inspect the work before accepting it](cases/specmirror.md)
+### 03 · [SpecMirror: inspect the work before accepting it](https://github.com/Cornelius-Chen/SpecMirror)
 
-SpecMirror keeps the engineering graph, scoped task contracts, run evidence, and human acceptance at the original project node. A limited Jervis Designer candidate catalog is connected; a full human-feedback-to-learning loop is still unproven. The workbench distinguishes an agent's report from a person's acceptance.
+SpecMirror keeps the engineering graph, scoped task contracts, run evidence, and human acceptance at the original project node. Its [public source slice](https://github.com/Cornelius-Chen/SpecMirror) opens as a local workbench and includes a real service route test: a source file changes, is checked, and returns through the **exact submitted run ID** to the original opinion. The interface recording shows that review surface on an isolated project fixture; a person's production acceptance is not claimed. A limited Jervis Designer candidate catalog is connected in the local project, while feedback-to-learning remains unproven.
+
+[![SpecMirror isolated interface: the original opinion beside the exact submitted result and affected graph nodes](assets/specmirror-review-at-origin.png)](https://github.com/Cornelius-Chen/SpecMirror)
+
+[Watch the isolated interface recording and inspect the source-backed loop →](https://github.com/Cornelius-Chen/SpecMirror/blob/main/docs/review-at-origin.md)
 
 ### 04 · [Local model and tool pipeline](cases/local-stack.md)
 
