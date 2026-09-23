@@ -12,7 +12,7 @@ M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.
 
 Jervis is the center of this research portfolio. It asks how a model can turn examples, practice, and feedback into **scoped, reusable domain judgment**—and how a later task can test whether that judgment actually helps. I set the system goals, boundaries, and acceptance criteria; the models and tools are replaceable workers inside that design.
 
-**Start with the work:** [run the public Jervis learning slice](https://github.com/Cornelius-Chen/Jervis) · [read the historical Designer case](cases/jervis.md#the-system-in-one-example) · [inspect the Quant trader loop](cases/quant.md#a-completed-diagnostic-loop) · [see the ownership map](VISION.md#responsibilities-and-actual-boundaries)
+**Start with the work:** [run Jervis learning](https://github.com/Cornelius-Chen/Jervis) · [run Guanlan's decision replay](https://github.com/Cornelius-Chen/Guanlan-Quant) · [read the historical Designer case](cases/jervis.md#the-system-in-one-example) · [see the ownership map](VISION.md#responsibilities-and-actual-boundaries)
 
 [![Layered portfolio architecture showing Jervis, its Designer domain, the Guanlan trading research application, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
 
@@ -37,6 +37,12 @@ The [public Jervis repository](https://github.com/Cornelius-Chen/Jervis) contain
 ### 02 · [Guanlan / Quant: the trader learning application](cases/quant.md)
 
 Guanlan owns point-in-time market data, computation, historical replay, and the research simulation. **Lu Dongyangzi** is the persistent trader identity that draws on Jervis workers and versioned experience to ask questions, make research decisions, inspect outcomes, and revise candidate judgments. A local diagnostic exam → targeted study → new-material retest loop has run. It has **not** demonstrated sustained profit, strict historical blindness, or live trading authority.
+
+The [public Guanlan research slice](https://github.com/Cornelius-Chen/Guanlan-Quant) runs selected original Q1–Q5 modules on invented data. Its four-way comparison shows why B beating cash does not justify selling A: the simulated switch trails holding A, while existing cash can buy B independently. It produces market, replay, candidate, and run records; it does not invoke the historical Jervis trader worker.
+
+[![Synthetic Guanlan research comparison of hold A, sell A, switch A to B, and buy B with existing cash](assets/guanlan-synthetic-decisions.png)](https://github.com/Cornelius-Chen/Guanlan-Quant)
+
+*Synthetic prices and proxy fills only. [Run and inspect the evidence →](https://github.com/Cornelius-Chen/Guanlan-Quant)*
 
 ### 03 · [SpecMirror: inspect the work before accepting it](cases/specmirror.md)
 

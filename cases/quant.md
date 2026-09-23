@@ -1,6 +1,6 @@
 # Guanlan / Quant · training a research trader across system boundaries
 
-[← Portfolio](../README.md) · [System map](../assets/portfolio-architecture.svg) · [Jervis architecture](jervis.md)
+[← Portfolio](../README.md) · [Run the Guanlan source](https://github.com/Cornelius-Chen/Guanlan-Quant) · [System map](../assets/portfolio-architecture.svg) · [Jervis architecture](jervis.md)
 
 > **Historical research and simulated decisions.** Lu Dongyangzi is a persistent trader identity in a research loop, not a trained foundation model or an autonomous brokerage account.
 
@@ -59,6 +59,10 @@ A separate numeric transfer challenge also retained a negative result: N1 hypoth
 
 The exam used paused historical replay and an assumed next-minute quote, not real fills. A process reviewer saw a simulated action receipt immediately after a node, so it was not a strictly pre-decision blind review. The current broader profit-wave learning round is ongoing; its planned sample counts are not completed-result claims.
 
-## Public release shape
+## Public runnable slice
 
-This case intentionally avoids raw prices, account state, strategy thresholds, exact test windows and complete worker prompts. A future runnable public Quant release should use synthetic market fixtures, preserve the same information-time contract, and include an example where an attractive replacement trade fails the independent cash comparison. The private market warehouse and experiment registry stay out of the public source tree.
+The [Guanlan-Quant repository](https://github.com/Cornelius-Chen/Guanlan-Quant) contains selected original Q1–Q5 modules and an invented, repeatable research fixture. It verifies Q1 snapshot readiness and a Q2 refusal of a mutated snapshot, compares four distinct simulated actions, records a revised Q3 question, writes a non-promoted Q4 candidate, and creates a Q5 replay receipt.
+
+[![Four separate synthetic Guanlan decisions](../assets/guanlan-synthetic-decisions.png)](https://github.com/Cornelius-Chen/Guanlan-Quant)
+
+In this fixture, B beats cash, but switching A into B trails holding A. Existing cash can buy B without selling A. This is a contract example, not the historical Lu Dongyangzi exam. The public run does not invoke a Jervis worker, reproduce the private candidate experience, or make a historical return claim. Raw market data, account state, strategy thresholds, exact test windows and complete worker prompts stay outside the release.
