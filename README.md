@@ -4,7 +4,9 @@
 
 M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.linkedin.com/in/rongrong-chen-844351305/)
 
-![An editorial illustration of a person examining evidence beside separate work surfaces](assets/portfolio-horizon.png)
+![Illustrated research studio: Cornelius at the center, with learning, design, trader research, review, media and desktop-control workspaces around him](assets/portfolio-studio.png)
+
+*An illustrated view of the workbench. The diagram below names the actual system boundaries and connection states.*
 
 ## The architecture I am building
 
