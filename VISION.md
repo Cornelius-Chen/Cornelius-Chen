@@ -8,7 +8,7 @@ The question behind this portfolio is: **how can an AI system accumulate useful 
 
 | System | Owns | Relationship today |
 | --- | --- | --- |
-| **Jervis** | Persistent project state, scoped domain experience, replaceable workers, candidate judgment, learning evaluation | Central learning architecture. A [public runnable Designer slice](https://github.com/Cornelius-Chen/Jervis) now verifies persistence, conditional selection and browser output with synthetic model replay; broader Designer and trader research execution remains documented separately. |
+| **Jervis** | Persistent project state, scoped domain experience, replaceable workers, candidate judgment, learning evaluation | Central learning architecture. [Two public offline runs](https://github.com/Cornelius-Chen/Jervis) verify conditional Designer selection and, separately, partial composition rebuild plus stale-result rejection. Historical apprenticeship and trader work remain distinct evidence. |
 | **Designer** | Design examples, methods, comparison, visual judgment, and limits of applicability | The first Jervis domain apprenticeship. The original Designer project remains an independent source of domain material. |
 | **Guanlan / Quant** | Time-bounded market facts, computation, historical replay, research simulation | The [public runnable Q1–Q5 slice](https://github.com/Cornelius-Chen/Guanlan-Quant) verifies research contracts on invented data. The local Lu Dongyangzi process uses Jervis workers and experience separately; private market data stays with Guanlan. |
 | **SpecMirror** | Project graph, file scope, run evidence, human review and acceptance | A limited Jervis Designer candidate catalog is connected. Feedback-to-learning has no demonstrated completed receipt. |

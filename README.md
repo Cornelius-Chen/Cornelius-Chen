@@ -30,9 +30,11 @@ The core loop is **source → practice → conditional judgment → scoped use �
 
 **Designer sits inside this architecture as the first domain apprenticeship.** It originated as an independent design learning system; a bounded integration now lets Jervis use selected Designer methods and evidence for real design work. This is an integration of domain capability, not a claim that the original Designer repository was absorbed or that design quality improved in a human evaluation.
 
-The [public Jervis repository](https://github.com/Cornelius-Chen/Jervis) contains a runnable slice of the original Mission, Registry and Designer learning code. A synthetic response replay produces two complete pages: one new task uses the tentative judgment; a different task rejects it. Browser behavior and persisted records are checked in a clean run. The historical apprenticeship and the public replay are separate evidence.
+The [public Jervis repository](https://github.com/Cornelius-Chen/Jervis) contains runnable slices of the original Mission, Registry and Designer learning code. One synthetic response replay produces two complete pages: a new task uses the tentative judgment; another rejects it. A **separate composition replay** changes wood to gravel, rebuilds only the sound and its dependent artifacts, keeps the motion and note, and rejects a late worker result. Browser behavior, WAV output and persisted versions are checked. These replays are separate from the historical apprenticeship.
 
 <p align="center"><img src="assets/jervis-workshop.png" width="48%" alt="Workshop page using a conditional design judgment"><img src="assets/jervis-dispatch.png" width="48%" alt="Dispatch table rejecting that design judgment"></p>
+
+[Inspect the separate wood → gravel composition, including both WAV files and the stale-result receipt →](https://github.com/Cornelius-Chen/Jervis/blob/main/docs/case-composition.md)
 
 ### 02 · [Guanlan / Quant: the trader learning application](cases/quant.md)
 
