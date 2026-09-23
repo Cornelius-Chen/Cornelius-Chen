@@ -12,7 +12,7 @@ M.A. Statistics, Columbia University · expected 2027 · [LinkedIn](https://www.
 
 Jervis is the center of this research portfolio. It asks how a model can turn examples, practice, and feedback into **scoped, reusable domain judgment**—and how a later task can test whether that judgment actually helps. I set the system goals, boundaries, and acceptance criteria; the models and tools are replaceable workers inside that design.
 
-**Start with a real case:** [a Designer judgment selected on one task and rejected on another](cases/jervis.md#the-system-in-one-example) · [a trader simulation that separated “sell A” from “buy B”](cases/quant.md#a-completed-diagnostic-loop) · [the ownership map](VISION.md#responsibilities-and-actual-boundaries)
+**Start with the work:** [run the public Jervis learning slice](https://github.com/Cornelius-Chen/Jervis) · [read the historical Designer case](cases/jervis.md#the-system-in-one-example) · [inspect the Quant trader loop](cases/quant.md#a-completed-diagnostic-loop) · [see the ownership map](VISION.md#responsibilities-and-actual-boundaries)
 
 [![Layered portfolio architecture showing Jervis, its Designer domain, the Guanlan trading research application, SpecMirror review, local model and tool pipelines, and separate supporting systems](assets/portfolio-architecture.svg)](assets/portfolio-architecture.svg)
 
@@ -29,6 +29,10 @@ Jervis is the center of this research portfolio. It asks how a model can turn ex
 The core loop is **source → practice → conditional judgment → scoped use → evaluation**. Durable project state and source references outlive a particular model worker. Jervis selects domain capability by scope, composes work through shared entities and contracts, and preserves the distinction between a completed run, a useful retrieval, and proven capability gain.
 
 **Designer sits inside this architecture as the first domain apprenticeship.** It originated as an independent design learning system; a bounded integration now lets Jervis use selected Designer methods and evidence for real design work. This is an integration of domain capability, not a claim that the original Designer repository was absorbed or that design quality improved in a human evaluation.
+
+The [public Jervis repository](https://github.com/Cornelius-Chen/Jervis) contains a runnable slice of the original Mission, Registry and Designer learning code. A synthetic response replay produces two complete pages: one new task uses the tentative judgment; a different task rejects it. Browser behavior and persisted records are checked in a clean run. The historical apprenticeship and the public replay are separate evidence.
+
+<p align="center"><img src="assets/jervis-workshop.png" width="48%" alt="Workshop page using a conditional design judgment"><img src="assets/jervis-dispatch.png" width="48%" alt="Dispatch table rejecting that design judgment"></p>
 
 ### 02 · [Guanlan / Quant: the trader learning application](cases/quant.md)
 

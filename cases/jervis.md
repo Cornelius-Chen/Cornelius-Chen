@@ -1,6 +1,6 @@
 # Jervis · learning that must survive a new task
 
-[← Portfolio](../README.md) · [System map](../assets/portfolio-architecture.svg) · [Quant application](quant.md)
+[← Portfolio](../README.md) · [Run the Jervis source](https://github.com/Cornelius-Chen/Jervis) · [System map](../assets/portfolio-architecture.svg) · [Quant application](quant.md)
 
 > **Research system, with bounded local execution.** Jervis studies how examples, practice and feedback become conditional domain judgment that a later worker can use. A completed run does not certify a new capability.
 
@@ -66,6 +66,8 @@ Jervis compiles a WorkOrder / context packet for each worker. Scope and permissi
 
 The governed program ledger still lists the structured Designer migration phase as active, with later program phases locked. Local integrated engineering deliveries describe their own bounded scope; they do not override that ledger.
 
-## Public release shape
+## Public runnable slice
 
-This page is a reviewed architecture case. The source workspace contains private registries, task inputs, local paths, research media and unfinished work; it is not the public repository. A separate runnable Jervis release should include a deliberately selected source slice, synthetic example, setup command, tests and a clear scope statement after that material is reviewed for redistribution.
+The [Jervis repository](https://github.com/Cornelius-Chen/Jervis) now publishes the real Mission, Registry/EventLog, learning and Designer study path with self-authored fictional material. Its offline example replays fixed synthetic model responses, then uses the original code to persist an experimental judgment, reload it in two fresh projects, apply or reject it, write complete HTML pages, and inspect their actual browser behavior. It includes setup commands, focused tests and a clear evidence map.
+
+That public replay is **not** the historical two-judgment apprenticeship described above. Its one synthetic candidate and two example tasks demonstrate reproducible mechanics; the historical model comparisons and their mixed result remain separate. The original private registry, media and worker transcripts were not copied into the public release.
