@@ -10,11 +10,14 @@
  </style>
 </defs>
 <rect class="bg" width="1600" height="1280"/>
-<text x="50" y="67" class="tag">CORNELIUS CHEN  /  SYSTEM ARCHITECT</text>
+<text x="50" y="67" class="tag">SYSTEM ARCHITECTURE PORTFOLIO</text>
 <text x="50" y="114" class="h1">From evidence to reusable judgment</text>
-<text x="1050" y="78" class="body">I define goals, boundaries and acceptance.</text>
-<text x="1050" y="105" class="small">Models and tools are replaceable workers.</text>
-<line x1="50" y1="139" x2="1550" y2="139" stroke="#9eb4b6"/>
+<rect x="645" y="27" width="620" height="103" rx="13" class="warm"/>
+<text x="669" y="67" class="h2">Cornelius Chen</text>
+<text x="669" y="98" class="body">Goals · system boundaries · experiment design · acceptance</text>
+<path d="M800 130 V166" class="line"/><path d="M1110 130 L1270 166" class="line"/>
+<line x1="50" y1="139" x2="610" y2="139" stroke="#9eb4b6"/>
+<line x1="1310" y1="139" x2="1550" y2="139" stroke="#9eb4b6"/>
 
 <!-- Core learning architecture -->
 <rect x="50" y="170" width="930" height="390" rx="15" class="card"/>
